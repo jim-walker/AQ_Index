@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AQ_Index</title>
+  <!-- Bootstrap CSS CDN  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Style sheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+
+    <!-- header for Title -->
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <strong>
+          <i class=></i> AQ_Index</strong>
+      </h1>
+    </div>
+
+    <!-- Row for user input -->
+    <div class="row">
+      <div class="col-sm-6">
+        <br>
+        <!-- First card is for handling the search parameters -->
+      
+        <div class="card">
+
+          <div class="card-body">
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+                <label for="search">Input Country</label>
+                <input type="text" class="form-control" id="search-term">
+              </div>
+
+              <!-- Submit button to go get data -->
+              <button type="submit" class="btn btn-default" id="run-search">
+                <i class="fa fa-search"></i> Search</button>
+              <button class="btn btn-default" id="clear-all">
+                <i class="fa fa-trash"></i> Clear Results</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This row will handle all of the retrieved articles -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+
+        <div class= 'displayData' placeholder = data_displayed>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Region -->
+    <div class="row">
+      <div class="col-sm-12">
+
+        <!-- bottom text -->
+        <hr>
+        <h5 class="text-center">
+          <small>AQ_Index.inc
+          </small>
+        </h5>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- Code to the JavaScript File -->
+  <script src="api.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
